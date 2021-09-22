@@ -32,7 +32,7 @@ const menuItems2 = [
   },
 ];
 
-/*function menuBuilder(array) {
+/*function menuBuilder() {
   for (let i = 0; i < menuItems.length; i++) {
     let listItem = document.createElement("li");
     let linkItem = document.createElement("a");
