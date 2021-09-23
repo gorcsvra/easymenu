@@ -32,11 +32,11 @@ nav ul li a:hover {
     padding: 1rem 5rem;
     color: rgba(255, 232, 214, 1);
     background-color: rgba(107, 112, 92, .5);
-
+    
 }
 
 main {
     width: 65vw;
     padding: 2rem;
-    text-align: justify;
+    text-align: justify;S
 }

@@ -64,6 +64,17 @@ const menuBuilder2 = (array = []) => {
   menuContainer.appendChild(listItem);
 });
 }
+//menü összeállító forEach metódussal, stringgel
+const menuBuilder3 = (array = []) => {
+  let htmlElements ='';
+  array.forEach( (item) => {
+htmlElements += '<li><a href="' + item.url + '">' +item.title +'</a></li>';
+  });
+ menuContainer.innerHTML = htmlElements;
+}
 
-menuBuilder(menuItems);
-menuBuilder2(menuItems2);
+
+//menuBuilder(menuItems);
+//menuBuilder2(menuItems2);
+menuBuilder3(menuItems);
+
