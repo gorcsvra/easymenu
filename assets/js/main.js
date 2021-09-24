@@ -43,7 +43,7 @@ const menuItems2 = [
   }
 }*/
 
-function menuBuilder(array) {
+function menuBuilder(array=[]) {
   for (let i = 0; i < array.length; i++) {
     let listItem = document.createElement("li");
     let linkItem = document.createElement("a");
@@ -64,6 +64,16 @@ const menuBuilder2 = (array = []) => {
   menuContainer.appendChild(listItem);
 });
 }
+//menü összeállító forEach metódussal, stringgel
+const menuBuilder3 = (array = []) => {
+  let htmlElements ='';
+  array.forEach( (item) => {
+htmlElements += '<li><a href="' + item.url + '">' +item.title +'</a></li>';
+  });
+ menuContainer.innerHtml = htmlElements;
+}
 
-menuBuilder(menuItems);
-menuBuilder2(menuItems2);
+
+//menuBuilder(menuItems);
+//menuBuilder2(menuItems2);
+menuBuilder3(menuItems);
