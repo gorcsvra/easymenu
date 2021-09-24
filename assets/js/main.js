@@ -70,7 +70,7 @@ const menuBuilder3 = (array = []) => {
   array.forEach( (item) => {
 htmlElements += '<li><a href="' + item.url + '">' +item.title +'</a></li>';
   });
- menuContainer.innerHtml = htmlElements;
+ menuContainer.innerHTML = htmlElements;
 }
 
 
