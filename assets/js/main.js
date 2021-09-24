@@ -72,9 +72,17 @@ htmlElements += '<li><a href="' + item.url + '">' +item.title +'</a></li>';
   });
  menuContainer.innerHTML = htmlElements;
 }
+//menü összeállító forEach metódussal,template stringgel
+const menuBuilder4 = (array = []) => {
+  let htmlElements ='';
+  array.forEach( (item) => {
+htmlElements += `<li><a href="${item.title}">${item.title}</a></li>`;
+  });
+ menuContainer.innerHTML = htmlElements;
+}
 
 
 //menuBuilder(menuItems);
 //menuBuilder2(menuItems2);
-menuBuilder3(menuItems);
-
+//menuBuilder3(menuItems);
+menuBuilder4(menuItems2);
